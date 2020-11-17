@@ -16,17 +16,17 @@ if(isset($_POST['submit'])){
 
   try{
     $mail->isSMTP();
-    $mail->Host = 'mail.abrildesign.com.br';
+    $mail->Host = '';
     $mail->SMTPAuth = true;
-    $mail->Username = 'marco.antonio@abrildesign.com.br'; 
-    $mail->Password = 'JW.FE3qhWgs7'; 
+    $mail->Username = ''; 
+    $mail->Password = ''; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = '25';
 
     $body = "<h3>Nome : $name <br>Email: $email <br>Menssagem : $message</h3>";
 
-    $mail->setFrom('marco.antonio@abrildesign.com.br'); 
-    $mail->addAddress('marco.correaskt@gmail.com'); 
+    $mail->setFrom(''); 
+    $mail->addAddress(''); 
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Contact Page)';
