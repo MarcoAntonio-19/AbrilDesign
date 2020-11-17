@@ -23,14 +23,14 @@ if(isset($_POST['submit'])){
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = '25';
 
-    
+    $body = "<h3>Nome : $name <br>Email: $email <br>Menssagem : $message</h3>";
 
     $mail->setFrom('marco.antonio@abrildesign.com.br'); 
     $mail->addAddress('marco.correaskt@gmail.com'); 
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Contact Page)';
-    $mail->Body = "<h3>Nome : $name <br>Email: $email <br>Menssagem : $message</h3>";
+    $mail->Body = $body;
 
     $mail->send();  
     $alert = '<div class="alert-success">
