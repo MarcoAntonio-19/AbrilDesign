@@ -12,6 +12,13 @@
     <style>
         body {
             padding: 10%;
+            background: #000;
+        }
+
+        label {
+            color: #fff;
+            font-size: 1.4em;
+            padding: 10px;
         }
 
         input {
@@ -21,15 +28,14 @@
         }
 
         .btn {
-
+            border: solid 1px #fff;
             padding: 15px;
             background: #000;
             color: #fff;
-            border: none;
         }
 
         .btn:hover {
-            border: solid 1px #000;
+            border: none;
             background: #5cb85c;
             transition: 0.5s;
             cursor: pointer;
@@ -46,9 +52,9 @@
 
         <label>Nome</label>
         <input type="text" name="name"><br>
-        <label>email</label>
+        <label>Email</label>
         <input type="email" name="email"><br>
-        <label>mensagem</label>
+        <label>Mensagem</label>
         <input type="text" name="msg"><br><br>
         <input class="btn" type="submit" name="submit" value="enviar">
     </form><br>
