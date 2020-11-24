@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
 
     $mail->send();  
     $alert = '<div class="alert-success">
-                 <span>Mensagem enviada!</span>
+                 <span>Mensagem enviada com sucesso</span>
                 </div>';
   } catch (Exception $e){
     $alert = '<div class="alert-error">
